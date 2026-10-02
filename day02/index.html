@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Day 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="form-card">
+
+            <div class="form-header">
+                <span class="badge">DAY 02</span>
+                <h1>Create Your Account</h1>
+                <p>Join us by creating your account below.</p>
+            </div>
+
+            <form>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="first-name">First Name</label>
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="first-name"
+                            placeholder="Enter first name"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label for="last-name">Last Name</label>
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="last-name"
+                            placeholder="Enter last name"
+                            required
+                        >
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="08012345678"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="date">Date of Birth</label>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label>Gender</label>
+
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="gender" value="male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="other">
+                            Other
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Confirm your password"
+                        required
+                    >
+                </div>
+
+                <label class="terms">
+                    <input type="checkbox" required>
+                    <span>I agree to the Terms and Conditions.</span>
+                </label>
+
+                <button type="submit">Create Account</button>
+
+                <p class="login-text">
+                    Already have an account?
+                    <a href="#">Log in</a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </main>
+
+</body>
+</html>

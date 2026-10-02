@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #080b12;
+    color: #e5e7eb;
+    min-height: 100vh;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.form-card {
+    width: 100%;
+    max-width: 650px;
+    padding: 40px;
+    background: #0d111a;
+    border: 1px solid #1f2937;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    color: #10b981;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.form-header h1 {
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group > label {
+    display: block;
+    margin-bottom: 8px;
+    color: #d1d5db;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"] {
+    width: 100%;
+    padding: 13px 15px;
+    background: #111827;
+    color: #ffffff;
+    border: 1px solid #263244;
+    border-radius: 9px;
+    outline: none;
+    font-family: inherit;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: #6b7280;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="password"]:focus {
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Gender */
+.radio-group {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    background: #111827;
+    border: 1px solid #263244;
+    border-radius: 9px;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 12px;
+    color: #9ca3af;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.radio-group label:hover {
+    background: #1f2937;
+    color: #ffffff;
+}
+
+input[type="radio"] {
+    accent-color: #10b981;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #9ca3af;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    accent-color: #10b981;
+}
+
+/* Terms */
+.terms {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    margin: 5px 0 25px;
+    color: #9ca3af;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.terms input {
+    margin-top: 4px;
+    accent-color: #10b981;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #10b981;
+    color: #06110d;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #34d399;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Login link */
+.login-text {
+    margin-top: 22px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.login-text a {
+    color: #10b981;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .container {
+        padding: 20px 15px;
+    }
+
+    .form-card {
+        padding: 28px 20px;
+        border-radius: 15px;
+    }
+
+    .form-header h1 {
+        font-size: 26px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
