@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Day 03</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <div class="login-card">
+
+            <div class="login-header">
+                <span class="badge">DAY 03</span>
+
+                <h1>Welcome Back</h1>
+
+                <p>Log in to continue to your account.</p>
+            </div>
+
+            <form>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+
+                    <div class="password-label">
+                        <label for="password">Password</label>
+
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+                <label class="remember">
+                    <input type="checkbox" name="remember">
+                    <span>Remember me</span>
+                </label>
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <p class="signup">
+                Don't have an account?
+                <a href="#">Create an account</a>
+            </p>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
