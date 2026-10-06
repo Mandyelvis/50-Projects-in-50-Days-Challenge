@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #080b12;
+    color: #ffffff;
+}
+
+.counter-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+    background: #111827;
+    border: 1px solid #263244;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.counter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.counter-header span {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.counter-header small {
+    color: #10b981;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.counter-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    margin-bottom: 30px;
+    background: #080b12;
+    border: 1px solid #263244;
+    border-radius: 15px;
+}
+
+#count {
+    color: #10b981;
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.counter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.counter-controls button {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 22px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #ffffff;
+    background: #172033;
+    border: 1px solid #263244;
+    transition: 0.3s ease;
+}
+
+.counter-controls button:hover {
+    background: #10b981;
+    border-color: #10b981;
+    transform: translateY(-2px);
+}
+
+#reset {
+    background: #10b981;
+    border-color: #10b981;
+}
+
+#reset:hover {
+    background: #059669;
+}
+
+.status {
+    margin-top: 25px;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .counter-container {
+        padding: 20px;
+    }
+
+    .counter-display {
+        height: 180px;
+    }
+
+    #count {
+        font-size: 75px;
+    }
+
+    .counter-controls {
+        gap: 8px;
+    }
+
+    .counter-controls button {
+        padding: 11px 16px;
+        font-size: 16px;
+    }
+}
