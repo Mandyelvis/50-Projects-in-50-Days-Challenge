@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 07 - To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="todo-container">
+
+        <div class="todo-header">
+            <div>
+                <h1>To-Do List</h1>
+                <p>Stay organized and get things done.</p>
+            </div>
+            <span class="day-label">DAY 07</span>
+        </div>
+
+        <div class="todo-input">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="What do you need to do?"
+            >
+            <button id="addTask">Add Task</button>
+        </div>
+
+        <div class="task-info">
+            <span id="taskCount">0 tasks</span>
+            <button id="clearTasks">Clear All</button>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p class="empty-message" id="emptyMessage">
+            No tasks yet. Add one to get started!
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
