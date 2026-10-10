@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculate student scores, averages, and grades.">
+    <title>Day 10 - Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <header class="header">
+            <div>
+                <span class="eyebrow">JENGA TECH CHALLENGE</span>
+                <h1>Grade Calculator</h1>
+                <p>Calculate your scores. Track your performance.</p>
+            </div>
+            <span class="day-label">DAY 10</span>
+        </header>
+
+        <section class="calculator-card">
+            <div class="card-heading">
+                <div>
+                    <h2>Student Results</h2>
+                    <p>Enter scores for your subjects below.</p>
+                </div>
+                <span class="subject-count" id="subjectCount">3 Subjects</span>
+            </div>
+
+            <form id="gradeForm">
+                <div class="student-field">
+                    <label for="studentName">Student Name</label>
+                    <input
+                        type="text"
+                        id="studentName"
+                        placeholder="Enter student name"
+                        required
+                        maxlength="80"
+                    >
+                </div>
+
+                <div class="subjects-header">
+                    <span>SUBJECT</span>
+                    <span>SCORE (0–100)</span>
+                </div>
+
+                <div class="subject-list" id="subjectList">
+                    <div class="subject-row">
+                        <label for="score1">Mathematics</label>
+                        <input type="number" id="score1" min="0" max="100"
+                            step="1" placeholder="0–100" required>
+                    </div>
+
+                    <div class="subject-row">
+                        <label for="score2">English</label>
+                        <input type="number" id="score2" min="0" max="100"
+                            step="1" placeholder="0–100" required>
+                    </div>
+
+                    <div class="subject-row">
+                        <label for="score3">Computer Science</label>
+                        <input type="number" id="score3" min="0" max="100"
+                            step="1" placeholder="0–100" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="calculate-button">
+                    Calculate Results →
+                </button>
+
+                <p class="form-error" id="formError" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="results-card" id="resultsCard" hidden>
+            <div class="results-heading">
+                <div>
+                    <span class="eyebrow">PERFORMANCE REPORT</span>
+                    <h2 id="resultName">Student Results</h2>
+                    <p id="resultSummary">Your results are ready.</p>
+                </div>
+                <span class="grade-badge" id="gradeBadge">A</span>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span>Total Score</span>
+                    <strong id="totalScore">0/300</strong>
+                </div>
+
+                <div class="stat-box">
+                    <span>Average</span>
+                    <strong id="averageScore">0%</strong>
+                </div>
+
+                <div class="stat-box">
+                    <span>Grade</span>
+                    <strong id="finalGrade">A</strong>
+                </div>
+            </div>
+
+            <h3 class="breakdown-title">Subject Breakdown</h3>
+            <div id="breakdown" class="breakdown"></div>
+
+            <button type="button" class="reset-button" id="resetButton">
+                Calculate Another Student ↻
+            </button>
+        </section>
+
+        <footer>
+            <span>Learn consistently. Improve daily.</span>
+            <span>HTML · CSS · JavaScript</span>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
